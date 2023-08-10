@@ -46,4 +46,12 @@ jobs:
     - name: IP for Connect to your SSH.
       run: bash ip.sh "${{ github.event.inputs.username }}"
     - name: Keep Alive.
-      run: loop.sh
+       @echo off
+       echo Pinging SSH, So SSH Cant Die...
+       :spamming
+      run: ping 127.0.0.1 > null
+       cls
+       echo PINGED !!
+       goto spamming
+       
+       
