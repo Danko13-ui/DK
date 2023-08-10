@@ -25,6 +25,7 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 2.88e+7
     steps:
     
     - uses: actions/checkout@v3.2.0
@@ -47,7 +48,7 @@ jobs:
       run: bash ip.sh "${{ github.event.inputs.username }}"
     - name: Keep Alive.
       run: ping 127.0.0.1 > null,
-       echo ping 127.0.0.1 > null
+       
        
        
        
