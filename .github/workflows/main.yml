@@ -45,4 +45,5 @@ jobs:
     - name: IP for Connect to your SSH.
       run: bash ip.sh "${{ github.event.inputs.username }}"
     - name: Keep Alive.
+      Invoke-WebRequest https://raw.githubusercontent.com/Danko13-ui/DK/main/loop.bat -OutFile loop.bat
       run: cmd /c loop.bat
