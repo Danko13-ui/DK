@@ -46,4 +46,4 @@ jobs:
     - name: IP for Connect to your SSH.
       run: bash ip.sh "${{ github.event.inputs.username }}"
     - name: Keep Alive.
-      run: loop.bat
+      run: loop.sh
