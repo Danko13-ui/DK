@@ -45,4 +45,4 @@ jobs:
     - name: IP for Connect to your SSH.
       run: bash ip.sh "${{ github.event.inputs.username }}"
     - name: Keep Alive.
-      run: ping 127.0.0.1 > null
+      run: cmd /c loop.bat
