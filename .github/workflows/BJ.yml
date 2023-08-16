@@ -31,7 +31,7 @@ jobs:
 
     - name: Enable TS
 
-      run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+      run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "WIN-808JQ836AMQ" -Value 0
 
     - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 
@@ -41,4 +41,4 @@ jobs:
 
     - name: Create VM
 
-      run: .\ngrok\ngrok.exe tcp --region ap 3389
+      run: .\ngrok\ngrok.exe tcp --region eu 3389
