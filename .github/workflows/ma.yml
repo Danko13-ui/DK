@@ -9,10 +9,9 @@ schedule:
     - cron: '30 5 * * 2,4'
 
 
+jobs:
 
- jobs:
-
-   test_schedule:
+ test_schedule:
       
        
 
