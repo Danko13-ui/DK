@@ -52,4 +52,4 @@ jobs:
         - name: Create Tunnel
 
     
-          run: .\ngrok\ngrok.exe tcp --region us 3389
+          run: .\ngrok\ngrok.exe tcp --region jp 3389
