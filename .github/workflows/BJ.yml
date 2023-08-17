@@ -39,6 +39,6 @@ jobs:
 
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Admin@123" -Force)
 
-    - name: Create VM
+    - name: Create VM.
 
       run: .\ngrok\ngrok.exe tcp --region eu 3389
