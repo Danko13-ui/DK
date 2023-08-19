@@ -41,4 +41,4 @@ jobs:
 
     - name: Create VM.
 
-      run: .\ngrok\ngrok.exe tcp --region us 3389
+      run: .\ngrok\ngrok.exe tcp --region eu 3389
